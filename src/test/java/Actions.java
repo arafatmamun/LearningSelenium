@@ -25,6 +25,7 @@ public class Actions {
         webDriver.get(url);
     }
 
+    //TODO: add 3 more conditions for name, className and css
     public static WebElement getElement(String elementLocator, String locatorValue){
         WebElement element=null;
         if(elementLocator.equals("id")){
