@@ -34,7 +34,8 @@ public class CommonActions {
         webDriver.get(url);
     }
 
-    public  WebElement getElement(String elementLocator, String locatorValue){
+    //TODO: add 3 more conditions for name, className and css
+    public static WebElement getElement(String elementLocator, String locatorValue){
         WebElement element=null;
         if(elementLocator.equals("id")){
             element = webDriver.findElement(By.id(locatorValue));
