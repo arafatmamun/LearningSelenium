@@ -21,7 +21,6 @@ public class CommonActions {
         System.setProperty("webdriver.gecko.driver", "C:\\Users\\shaki\\development\\github\\LearningSelenium\\web_drivers\\gekodriver.exe");
         webDriver = new FirefoxDriver();
         webDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
     }
 
     public void setChromeDriver(){
