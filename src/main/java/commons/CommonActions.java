@@ -18,14 +18,13 @@ public class CommonActions {
     }
 
     public void setGeckoDriver(){
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Arafat Mamun\\Development\\SourceCode\\gitHub\\LearningSelenium\\web_drivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\jillu\\development\\source_code\\github\\LearningSelenium\\drivers\\geckodriver.exe");
         webDriver = new FirefoxDriver();
         webDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
     }
 
     public void setChromeDriver(){
-       System.setProperty("webdriver.chrome.driver", "C:\\Users\\Arafat Mamun\\Development\\SourceCode\\gitHub\\LearningSelenium\\web_drivers\\chromedriver.exe");
+       System.setProperty("webdriver.chrome.driver", "C:\\Users\\jillu\\development\\source_code\\github\\LearningSelenium\\drivers\\chromedriver.exe");
        webDriver = new ChromeDriver();
        webDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
